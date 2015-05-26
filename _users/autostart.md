@@ -11,8 +11,8 @@ There is currently no official installer available for Windows. However, there a
 There are a number of third-party utilities which aim to address this issue. These typically provide an installer, let Syncthing start automatically, and a more polished user experience (e.g. by behaving as a "proper" Windows application, rather than forcing you to start your browser to interact with Syncthing).
 
 See:
- - [Windows-specific applications](https://github.com/syncthing/syncthing/wiki/Community-Contributions#windows)
- - [Cross-platform applications](https://github.com/syncthing/syncthing/wiki/Community-Contributions#cross-platform)
+ - [Windows-specific applications](http://docs.syncthing.net/users/contrib.html#windows)
+ - [Cross-platform applications](http://docs.syncthing.net/users/contrib.html#cross-platform)
 
 ### Start on Login
 

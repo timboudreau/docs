@@ -65,7 +65,7 @@ other's device ID. It's not possible (in practice) to forge a device ID.
 specific SHA-256 hash. If you can do that, you can spoof any TLS
 certificate. The world is your oyster!)
 
-See also [Device IDs](https://github.com/syncthing/syncthing/wiki/Device-IDs).
+See also [Understanding Device IDs](http://docs.syncthing.net/dev/device-ids.html).
 
 ### What if there is a conflict?
 

@@ -21,6 +21,9 @@ author:
 # Custom vars
 version:          2.1.0
 
+redcarpet:
+  extensions: ["autolink", "with_toc_data"]
+
 collections:
   dev:
     output: true
