@@ -4,7 +4,15 @@ This repo is the source behind http://docs.syncthing.net/.
 
 # Editing
 
-To edit the documentation you need a GitHub account. Once you have created one and logged in, you can edit any page by navigating to the corresponding file and clicking the edit (pen) icon. This will create what is called a "fork" and a "pull request", which will be approved by one of the existing documentation team members. Once you've made a contribution or two, you can be added to the documentation team and perform edits without requiring approval.
+To edit the documentation you need a GitHub account. Once you have created one
+and logged in, you can edit any page by navigating to the corresponding file
+and clicking the edit (pen) icon. This will create what is called a "fork" and
+a "pull request", which will be approved by one of the existing documentation
+team members. Once you've made a contribution or two, you can be added to the
+documentation team and perform edits without requiring approval.
+
+In the long run, learning to use git and running
+[Jekyll](http://jekyllrb.com/) on your computer is beneficial.
 
 # Structure
 
@@ -14,7 +22,7 @@ The documentation is divided into an index page (`index.md`) and various subsect
  - Information for users in `_users`.
  - Information for developers in `_dev`.
 
- Each page has what is called a "front matter", which looks something like:
+Each page has what is called a "front matter", which looks something like:
 
  ```
  ---
