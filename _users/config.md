@@ -2,7 +2,7 @@
 title: Configuration Files
 ---
 
-{% include outdated.html %}
+{% include outdated.html reason="Attributes have been added." %}
 
 Syncthing uses a single directory to store configuration, crypto keys and index caches. The location defaults to `~/.config/syncthing` (Unixes), `%AppData%/Syncthing` (Windows XP), `%localappdata%/Syncthing` (Windows 7/8) or `~/Library/Application Support/Syncthing` (Mac) but is also settable at runtime using the `-home` flag. In this directory you'll generally see something like the following files:
 
