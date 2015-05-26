@@ -1,8 +1,5 @@
 ---
-layout: page
 title: File Versioning
-nav: true
-weight: 10
 ---
 
 There are 3 types of File Versioning. Note: When you select each in the web interface, a short description of each is shown to help you decide.

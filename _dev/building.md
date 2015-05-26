@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Building Syncthing
-nav: true
 weight: 0
 ---
 

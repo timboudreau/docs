@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Getting Started
-nav: true
 weight: 0
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Community Contributions
-nav: true
 weight: 0
 ---
 

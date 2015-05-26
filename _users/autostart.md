@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Autostarting
-nav: true
-weight: 10
 ---
 
 ## Windows

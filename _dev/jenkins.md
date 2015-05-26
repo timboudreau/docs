@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Jenkins CI
-nav: true
-weight: 10
 ---
 
 Jenkins will test pull requests from recognized authors. The tests performed are currently these:

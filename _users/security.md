@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Security Principles
-nav: true
-weight: 20
 ---
 
 Security is one of the primary project goals. This means that it should not be possible for an attacker to join a cluster uninvited, and it should not be possible to extract private information from intercepted traffic. Currently this is implemented as follows.

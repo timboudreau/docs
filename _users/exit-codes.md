@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Exit Codes
-nav: true
-weight: 10
 ---
 
 These are the known exit codes returned by Syncthing:

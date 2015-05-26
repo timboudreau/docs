@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Ignoring Files
-nav: true
-weight: 5
 ---
 
 If some files should not be synchronized to other nodes, a file called `.stignore` can be created containing file patterns to ignore. The `.stignore` file must be placed in the root of the repository. The `.stignore` file itself will never be synced to other nodes, although it can `#include` files that *are* synchronized between nodes. All patterns are relative to the repository root.

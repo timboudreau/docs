@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Debugging
-nav: true
-weight: 10
 ---
 
 There's a lot that happens behind the covers, and syncthing is generally quite silent about it. A number of environment variables can be used to set the logging to verbose for various parts of the program, and to enable profiling.

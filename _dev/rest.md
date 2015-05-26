@@ -1,7 +1,5 @@
 ---
 title: REST API
-nav: true
-layout: page
 weight: 0
 ---
 

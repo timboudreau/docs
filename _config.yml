@@ -30,3 +30,29 @@ collections:
     output: true
   rest:
     output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "dev"
+    values:
+      layout: "page"
+      weight: 5
+      nav: true
+  -
+    scope:
+      path: ""
+      type: "intro"
+    values:
+      layout: "page"
+      weight: 5
+      nav: true
+  -
+    scope:
+      path: ""
+      type: "users"
+    values:
+      layout: "page"
+      weight: 5
+      nav: true

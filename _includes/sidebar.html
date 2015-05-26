@@ -7,27 +7,36 @@
   <nav class="sidebar-nav">
     <h2>Introductions</h2>
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
-    {% assign pages = site.intro | sort: 'title' | sort: 'weight' %}
+    {% assign weights = site.intro | group_by:"weight" | sort:"name" %}
+    {% for weight in weights %}
+    {% assign pages = weight.items | sort:"title" %}
     {% for node in pages %}
       {% if node.title != null and node.nav == true %}
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
       {% endif %}
+    {% endfor %}
     {% endfor %}
 
     <h2>For Users</h2>
-    {% assign pages = site.users | sort: 'title' | sort: 'weight' %}
+    {% assign weights = site.users | group_by:"weight" | sort:"name" %}
+    {% for weight in weights %}
+    {% assign pages = weight.items | sort:"title" %}
     {% for node in pages %}
       {% if node.title != null and node.nav == true %}
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
       {% endif %}
     {% endfor %}
+    {% endfor %}
 
     <h2>For Developers</h2>
-    {% assign pages = site.dev | sort: 'title' | sort: 'weight' %}
+    {% assign weights = site.dev | group_by:"weight" | sort:"name" %}
+    {% for weight in weights %}
+    {% assign pages = weight.items | sort:"title" %}
     {% for node in pages %}
       {% if node.title != null and node.nav == true %}
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
       {% endif %}
+    {% endfor %}
     {% endfor %}
   </nav>
 

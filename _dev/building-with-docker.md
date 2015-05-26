@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Building with Docker
+nav: false
 ---
 
 The Docker based build image exactly replicates the official build process and is a quick way to get up and running with the full cross compiled setup. Start by getting the build image. It is fairly large (about 1.8 GB).

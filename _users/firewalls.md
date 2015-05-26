@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Network & Firewalls
-nav: true
 weight: 0
 ---
 

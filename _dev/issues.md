@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Issue Management
-nav: true
-weight: 10
 ---
 
 Bugs, feature requests and other things we need to do are tracked as Github issues. Issues can be of various types and in various states, and also belong to milestones or not. This page is an attempt to document the current practice.

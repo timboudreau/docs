@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Frequently Asked Questions
-nav: true
 weight: 0
 ---
 

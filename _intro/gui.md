@@ -1,8 +1,6 @@
 ---
 layout: page
 title: An intro to the GUI
-nav: true
-weight: 10
 ---
 
 ## Local State

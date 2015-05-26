@@ -1,8 +1,6 @@
 ---
-layout: page
 title: Creating a Release
-nav: true
-weight: 90
+weight: 9
 ---
 
 ## Prerequisites
