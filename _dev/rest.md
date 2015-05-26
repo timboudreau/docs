@@ -11,22 +11,19 @@ Syncthing exposes a REST interface over HTTP on the GUI port. This is used by th
 
 To use the POST methods, or any method when authentication is enabled, an API key must be set and used. The API key can be generated in the GUI, or set in the `configuration/gui/apikey` element in the configuration file. To use an API key, set the request header `X-API-Key` to the API key value.
 
-## Endpoints
+## Endpoint Index
 
-<table>
 {% assign cats = site.rest | group_by: 'category' | sort: 'name' %}
 {% for cat in cats %}
 {% assign n1 = forloop.index %}
-<tr><th colspan="2">Category "{{cat.name}}"</th></tr>
+<h3>Category "{{cat.name}}"</h3>
 {% assign locs = cat.items | group_by: 'loc' | sort: 'name' %}
-{% for loc in locs %}
-{% assign n2 = forloop.index %}
-<tr><td>{{n1}}.{{n2}}</td><td><a href="#{{loc.name | slugify}}">{{loc.name}}</a></td></tr>
+{% for loc in locs %}{% assign n2 = forloop.index %}&emsp;{{n1}}.{{n2}} <a href="#{{loc.name | slugify}}">{{loc.name}}</a><br />{% endfor %}
 {% endfor %}
-{% endfor %}
-</table>
 
+---
 
+## Endpoints
 
 {% assign cats = site.rest | group_by: 'category' | sort: 'name' %}
 {% for cat in cats %}
