@@ -23,4 +23,4 @@ As a developer looking to get started with a contribution, see [how to build Syn
 
 * For a more real time experience, there's also an IRC channel `#syncthing` on Freenode.
 
-* For other concerns you may reach out to members of the core team, currently @calmh, @AudriusButkevicius and @Zillode.
+* For other concerns you may reach out to members of the core team, currently [@calmh](https://github.com/calmh), [@AudriusButkevicius](https://github.com/AudriusButkevicius) and [@Zillode](https://github.com/Zillode).
