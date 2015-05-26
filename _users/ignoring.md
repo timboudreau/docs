@@ -2,11 +2,17 @@
 title: Ignoring Files
 ---
 
-If some files should not be synchronized to other nodes, a file called `.stignore` can be created containing file patterns to ignore. The `.stignore` file must be placed in the root of the repository. The `.stignore` file itself will never be synced to other nodes, although it can `#include` files that *are* synchronized between nodes. All patterns are relative to the repository root.
+If some files should not be synchronized to other nodes, a file called
+`.stignore` can be created containing file patterns to ignore. The `.stignore`
+file must be placed in the root of the repository. The `.stignore` file itself
+will never be synced to other nodes, although it can `#include` files that
+*are* synchronized between nodes. All patterns are relative to the repository
+root.
 
 ## Patterns
 
-The `.stignore` file contains a list of file or path patterns. The *first* pattern that matches will decide the fate of a given file.
+The `.stignore` file contains a list of file or path patterns. The *first*
+pattern that matches will decide the fate of a given file.
 
 * Regular file names match themselves, i.e. the pattern `foo` matches the files `foo`, `subdir/foo` as well as any directory named `foo`. Spaces are treated as regular characters.
 
@@ -77,8 +83,21 @@ Please note that directory patterns ending with a slash `some/directory/` matche
 
 ## Effects on "In Sync" Status
 
-Currently the effects on who is in sync with what can be a bit confusing when using ignore patterns. This should be cleared up in a future version...
+Currently the effects on who is in sync with what can be a bit confusing when
+using ignore patterns. This should be cleared up in a future version...
 
-Assume two nodes, Alice and Bob, where Alice has 100 files to share, but Bob ignores 25 of these. From Alice's point of view Bob will become about 75% in sync (the actual number depends on the sizes of the individual files) and remain in "Syncing" state even though it is in fact not syncing anything (issue [#623](https://github.com/syncthing/syncthing/issues/623)). From Bob's point of view it's 100% up to date but will show fewer files in both the local and global view.
+Assume two nodes, Alice and Bob, where Alice has 100 files to share, but Bob
+ignores 25 of these. From Alice's point of view Bob will become about 75% in
+sync (the actual number depends on the sizes of the individual files) and
+remain in "Syncing" state even though it is in fact not syncing anything
+(issue [#623](https://github.com/syncthing/syncthing/issues/623)). From Bob's
+point of view it's 100% up to date but will show fewer files in both the local
+and global view.
 
-If Bob adds files that have already been synced to the ignore list, they will remain in the "global" view but disappear from the "local" view. The end result is more files in the global repository than in the local, but still 100% in sync (issue [#624](https://github.com/syncthing/syncthing/issues/624)). From Alice's point of view, Bob will remain 100% in sync until the next reconnect, because Bob has already announce that he has the files that are now suddenly ignored.
+If Bob adds files that have already been synced to the ignore list, they will
+remain in the "global" view but disappear from the "local" view. The end
+result is more files in the global repository than in the local, but still
+100% in sync (issue
+[#624](https://github.com/syncthing/syncthing/issues/624)). From Alice's point
+of view, Bob will remain 100% in sync until the next reconnect, because Bob
+has already announce that he has the files that are now suddenly ignored.

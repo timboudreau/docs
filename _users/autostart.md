@@ -1,6 +1,8 @@
 ---
-title: Autostarting
+title: Starting Syncting Automatically
 ---
+
+{% include outdated.html %}
 
 ## Windows
 
