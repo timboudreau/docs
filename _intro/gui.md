@@ -10,6 +10,8 @@ see a list of folders you have, and as you click on one folder name, it
 expands to show you about that folder. Next to folder name, you can will see
 the state of the folder:
 
+![gui1.png](gui1.png)
+
  - *Unknown* while the GUI is loading.
  - *Unshared* when you have not shared this folder,
  - *Stopped* when the folder has experienced an error,
@@ -35,6 +37,8 @@ be synchronized.
 Bottom right side of the screen shows the overall state of the remote devices
 (overall completion percentage over all of the common folders between your
 device and the remote device.)
+
+![gui2.png](gui2.png)
 
 If a device has one or more folders to sync, you will see it with status
 *Syncing* and a percentage indicating its progress.
