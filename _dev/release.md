@@ -15,7 +15,11 @@ weight: 9
 
 ## Process
 
-Make sure the build seems sane. I.e. the build is clean on the build server, the integration tests pass without complaints. (Currently, the tests are a bit flaky, specifically the `TestSyncCluster...` ones. I'm not sure if the tests are weird or there is something actually bad happening that should be fixed - requires investigation).
+Make sure the build seems sane. I.e. the build is clean on the build server,
+the integration tests pass without complaints. (Currently, the tests are a bit
+flaky, specifically the `TestSyncCluster...` ones. I'm not sure if the tests
+are weird or there is something actually bad happening that should be fixed -
+requires investigation).
 
 Create a new, signed tag on master, with the version as comment, and push it:
 
@@ -28,10 +32,12 @@ The build server will build packages under the job `syncthing-release`. Wait for
 
 Run `./changelog.sh` (in the repo) to create the changelog comparison from the previous release. Copy to clipboard.
 
-On the Github releases page, select the newly pushed tag and hit "Edit Tag". Set the "Release title" to the same version as the tag, paste in the changelog from above, and publish the release.
+On the Github releases page, select the newly pushed tag and hit "Edit Tag".
+Set the "Release title" to the same version as the tag, paste in the changelog
+from above, and publish the release.
 
-> :warning: At this point, syncthing instances that do an upgrade check will see the new version, but fail to upgrade since there are no files there yet, generating a warning. But files can't be uploaded by the release upload script until the release is published. So minimizing the time spent in this stage is a good idea.
-
-On the build server, logged in via ssh, run `/usr/local/bin/upload-release`. This will create the md5sum and sha1sum files, sign them (gpg will prompt for key passphrase twice) and upload the whole shebang to Github.
+On the build server, logged in via ssh, run `/usr/local/bin/upload-release`.
+This will create the md5sum and sha1sum files, sign them (gpg will prompt for
+key passphrase twice) and upload the whole shebang to Github.
 
 Verify it looks sane on the releases page.

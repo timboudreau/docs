@@ -2,11 +2,18 @@
 title: Issue Management
 ---
 
-Bugs, feature requests and other things we need to do are tracked as Github issues. Issues can be of various types and in various states, and also belong to milestones or not. This page is an attempt to document the current practice.
+Bugs, feature requests and other things we need to do are tracked as Github
+issues. Issues can be of various types and in various states, and also belong
+to milestones or not. This page is an attempt to document the current
+practice.
 
 ## Labels
 
-Issues without labels are undecided - that is, we don't yet know if it's a bug, a configuration issue, a feature request or what. Issues that are invalid for whatever reason are closed with a short explanation of why. Examples include "Duplicate of #123", "Discovered to be configuration error", "Rendered moot by #123" and so on. We don't use the "invalid" or "wontfix" labels.
+Issues without labels are undecided - that is, we don't yet know if it's a
+bug, a configuration issue, a feature request or what. Issues that are invalid
+for whatever reason are closed with a short explanation of why. Examples
+include "Duplicate of #123", "Discovered to be configuration error", "Rendered
+moot by #123" and so on. We don't use the "invalid" or "wontfix" labels.
 
 - **android** - Marks an issue as occurring on the Android platform only.
 
