@@ -6,7 +6,7 @@ method: GET
 
 Verifies and formats a device ID. Accepts all currently valid formats (52 or 56 characters with or without separators, upper or lower case, with trivial substitutions). Takes one parameter, `id`, and returns either a valid device ID in modern format, or an error.
 
-```json
+```bash
 $ curl -s http://localhost:8384/rest/svc/deviceid?id=1234 | json
 {
   "error": "device ID invalid: incorrect length"
