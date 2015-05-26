@@ -11,7 +11,7 @@ development on syncthing or if you need to do a special packaging of it. For all
 </p>
 
 <p class="message warning">
-If you're on Linux and want the quickest possible start, check out <a href="/dev/building-with-docker.html">Building with Docker</a>. Otherwise follow the guide below to set up the development environment on your computer.
+If you're on Linux and want the quickest possible start, check out <a href="{{ site.baseurl }}/dev/building-with-docker.html">Building with Docker</a>. Otherwise follow the guide below to set up the development environment on your computer.
 </p>
 
 ## Branches and Tags

@@ -10,7 +10,7 @@
     {% assign pages = site.intro | sort: 'title' | sort: 'weight' %}
     {% for node in pages %}
       {% if node.title != null and node.nav == true %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
       {% endif %}
     {% endfor %}
 
@@ -18,7 +18,7 @@
     {% assign pages = site.users | sort: 'title' | sort: 'weight' %}
     {% for node in pages %}
       {% if node.title != null and node.nav == true %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
       {% endif %}
     {% endfor %}
 
@@ -26,7 +26,7 @@
     {% assign pages = site.dev | sort: 'title' | sort: 'weight' %}
     {% for node in pages %}
       {% if node.title != null and node.nav == true %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
       {% endif %}
     {% endfor %}
   </nav>

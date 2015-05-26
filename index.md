@@ -5,11 +5,11 @@ title: Home
 
 # Welcome
 
-As a new user, [the getting started guide](/intro/getting-started.html) is a good place to start, then perhaps moving on to [the FAQ](/users/faq.html). If
+As a new user, [the getting started guide]({{ site.baseurl }}/intro/getting-started.html) is a good place to start, then perhaps moving on to [the FAQ](/users/faq.html). If
 you run into trouble getting devices to connect to each other,
-[Network & Firewalls](/users/firewalls.html) explain the networking necessary to get it to work.
+[Network & Firewalls]({{ site.baseurl }}/users/firewalls.html) explain the networking necessary to get it to work.
 
-As a developer looking to get started with a contribution, see [how to build Syncthing](/dev/building.html), [debugging](/dev/debugging.html) and the [contribution guidelines](https://github.com/syncthing/syncthing/blob/master/CONTRIBUTING.md).
+As a developer looking to get started with a contribution, see [how to build Syncthing]({{ site.baseurl }}/dev/building.html), [debugging]({{ site.baseurl }}/dev/debugging.html) and the [contribution guidelines](https://github.com/syncthing/syncthing/blob/master/CONTRIBUTING.md).
 
 # Contact
 

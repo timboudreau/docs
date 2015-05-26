@@ -11,7 +11,7 @@ title:            Syncthing
 tagline:          'Documentation'
 description:      '...'
 url:              https://syncthing.net/
-baseurl:
+baseurl:          /docs
 
 author:
   name:           'Jakob Borg'
