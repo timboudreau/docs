@@ -11,7 +11,7 @@ As a new user, [the getting started guide]({{ site.baseurl }}/intro/getting-star
 you run into trouble getting devices to connect to each other,
 [Network & Firewalls]({{ site.baseurl }}/users/firewalls.html) explain the networking necessary to get it to work.
 
-As a developer looking to get started with a contribution, see [how to build Syncthing]({{ site.baseurl }}/dev/building.html), [debugging]({{ site.baseurl }}/dev/debugging.html) and the [contribution guidelines](https://github.com/syncthing/syncthing/blob/master/CONTRIBUTING.md).
+As a developer looking to get started with a contribution, see [how to build Syncthing]({{ site.baseurl }}/dev/building.html), [debugging]({{ site.baseurl }}/dev/debugging.html) and the [contribution guidelines](https://github.com/syncthing/syncthing/blob/master/CONTRIBUTING.md). This documentation site can be [edited here](https://github.com/syncthing/docs).
 
 # Contact
 
