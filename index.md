@@ -5,6 +5,8 @@ title: Home
 
 # Welcome
 
+You can access the page index at any time by clicking the <span class="hamburger"></span> icon in the upper left of the page.
+
 As a new user, [the getting started guide]({{ site.baseurl }}/intro/getting-started.html) is a good place to start, then perhaps moving on to [the FAQ](/users/faq.html). If
 you run into trouble getting devices to connect to each other,
 [Network & Firewalls]({{ site.baseurl }}/users/firewalls.html) explain the networking necessary to get it to work.
