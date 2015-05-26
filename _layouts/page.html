@@ -4,10 +4,10 @@ layout: default
 
 <div class="page">
   {% if page.url != site.baseurl %}
-  <p>
+  <p><small>
   <a href="{{ site.baseurl }}/">&lt;&lt; Home</a> |
   <a href="https://github.com/syncthing/docs/blob/gh-pages/{{page.relative_path}}">Edit this page</a>
-  </p>
+  </small></p>
   {% endif %}
 
   <h1 class="page-title">{{ page.title }}</h1>
@@ -16,9 +16,9 @@ layout: default
   <hr />
 
   {% if page.url != site.baseurl %}
-  <p>
+  <p><small>
   <a href="{{ site.baseurl }}/">&lt;&lt; Home</a> |
   <a href="https://github.com/syncthing/docs/blob/gh-pages/{{page.relative_path}}">Edit this page</a>
-  </p>
+  </small></p>
   {% endif %}
 </div>
