@@ -9,9 +9,9 @@ relative_permalinks: true
 # Setup
 title:            Syncthing
 tagline:          'Documentation'
-description:      '...'
+description:      ''
 url:              https://syncthing.net/
-baseurl:          /docs
+baseurl:          ''
 
 author:
   name:           'Jakob Borg'
