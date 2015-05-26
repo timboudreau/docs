@@ -1,0 +1,32 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Syncthing
+tagline:          'Documentation'
+description:      '...'
+url:              https://syncthing.net/
+baseurl:
+
+author:
+  name:           'Jakob Borg'
+  url:            https://twitter.com/syncthing
+  email: info@syncthing.net
+
+# Custom vars
+version:          2.1.0
+
+collections:
+  dev:
+    output: true
+  intro:
+    output: true
+  users:
+    output: true
+  rest:
+    output: false

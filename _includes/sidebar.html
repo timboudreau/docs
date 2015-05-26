@@ -1,0 +1,39 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.title =="Home" %}checked{% endif %}>
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <nav class="sidebar-nav">
+    <h2>Introductions</h2>
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+    {% assign pages = site.intro | sort: 'title' | sort: 'weight' %}
+    {% for node in pages %}
+      {% if node.title != null and node.nav == true %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+      {% endif %}
+    {% endfor %}
+
+    <h2>For Users</h2>
+    {% assign pages = site.users | sort: 'title' | sort: 'weight' %}
+    {% for node in pages %}
+      {% if node.title != null and node.nav == true %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+      {% endif %}
+    {% endfor %}
+
+    <h2>For Developers</h2>
+    {% assign pages = site.dev | sort: 'title' | sort: 'weight' %}
+    {% for node in pages %}
+      {% if node.title != null and node.nav == true %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+    </p>
+  </div>
+</div>
