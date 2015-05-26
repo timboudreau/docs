@@ -11,13 +11,14 @@ To use the POST methods, or any method when authentication is enabled, an API ke
 
 ## Endpoint Index
 
+<ol>
 {% assign cats = site.rest | group_by: 'category' | sort: 'name' %}
 {% for cat in cats %}
-{% assign n1 = forloop.index %}
-<h3>Category "{{cat.name}}"</h3>
-{% assign locs = cat.items | group_by: 'loc' | sort: 'name' %}
-{% for loc in locs %}{% assign n2 = forloop.index %}&emsp;{{n1}}.{{n2}} <a href="#{{loc.name | slugify}}">{{loc.name}}</a><br />{% endfor %}
-{% endfor %}
+<li>Category "{{cat.name}}"</li>
+<ol>{% assign locs = cat.items | group_by: 'loc' | sort: 'name' %}
+{% for loc in locs %}<li><a href="#{{loc.name | slugify}}">{{loc.name}}</a></li>{% endfor %}
+</ol>{% endfor %}
+</ol>
 
 ---
 

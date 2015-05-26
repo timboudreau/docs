@@ -33,6 +33,8 @@ collections:
     output: true
   rest:
     output: false
+  events:
+    output: false
 
 defaults:
   -
