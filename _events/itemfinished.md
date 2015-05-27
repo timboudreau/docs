@@ -2,7 +2,8 @@
 title: ItemFinished
 ---
 
-Generated when syncthing ends synchronizing a file to a newer version.
+Generated when syncthing ends synchronizing a file to a newer version. A
+successfull operation:
 
 ```json
 {
@@ -19,6 +20,19 @@ Generated when syncthing ends synchronizing a file to a newer version.
 }
 ```
 
-<p class="message warning">
-If error is not null, synchronizing the file has failed!
-</p>
+An unsuccessfull operation:
+
+```json
+{
+    "id": 44,
+    "type": "ItemFinished",
+    "time": "2015-05-27T11:21:05.711133004+02:00",
+    "data": {
+        "action": "update",
+        "error": "open /Users/jb/src/github.com/syncthing/syncthing/test/s2/foo/.syncthing.hej.tmp: permission denied",
+        "folder": "default",
+        "item": "foo/hej",
+        "type": "file"
+    }
+}
+```

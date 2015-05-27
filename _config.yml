@@ -1,28 +1,31 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown: redcarpet
+highlighter: pygments
 
 # Permalinks
-permalink:        pretty
+permalink: pretty
 relative_permalinks: true
 
 # Setup
-title:            Syncthing
-tagline:          'Documentation'
-description:      ''
-url:              https://syncthing.net/
-baseurl:          ''
+title: Syncthing
+tagline: "Documentation"
+description: ""
+url: https://syncthing.net/
+baseurl: ""
 
 author:
-  name:           'Jakob Borg'
-  url:            https://twitter.com/syncthing
+  name: "Jakob Borg"
+  url: https://twitter.com/syncthing
   email: info@syncthing.net
 
-# Custom vars
-version:          2.1.0
-
 redcarpet:
-  extensions: ["autolink", "with_toc_data", "no_intra_emphasis", "tables", "fenced_code_blocks", "strikethrough"]
+  extensions:
+    - autolink
+    - with_toc_data
+    - no_intra_emphasis
+    - tables
+    - fenced_code_blocks
+    - strikethrough
 
 collections:
   dev:
