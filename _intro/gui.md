@@ -3,42 +3,43 @@ layout: page
 title: An intro to the GUI
 ---
 
-## Local State
+## Folder View
 
-Left side of the screen shows the local state (your device state).  You can
-see a list of folders you have, and as you click on one folder name, it
-expands to show you about that folder. Next to folder name, you can will see
-the state of the folder:
+The left side of the screen shows the ID and current state of all configured
+folders. Clicking the folder name makes that section expand to show more
+detailed folder information, and buttons for editing the configuration or
+forcing a rescan.
 
 ![gui1.png](gui1.png)
 
+A folder can be in any one of these states:
+
  - *Unknown* while the GUI is loading.
+ 
  - *Unshared* when you have not shared this folder,
+ 
  - *Stopped* when the folder has experienced an error,
+ 
  - *Scanning* while the folder is lookign for local changes,
+ 
  - *Up to Date* when the folder is in sync with the rest of the cluster,
+ 
  - *Syncing* when this device is downloading changes from the network.
 
-In the information about each folder, you can see information about number of
-files and the size of folder:
+Among the folder details, you can see the current "Global State" and "Local State" summaries, as well as the amount of "Out of Sync" data if the the folder state is not up to date.
 
- - *Global State* indicates how many files there are between all devices in this folder - this is the currently desired state for each device.
- - *Local State* shows how many files this devices currently has.
+ - *Global State* indicates how much data the fully up to date folder contains - this is basically the sum of the newest versions of all files from all connected devices. This is the size of the folder on your computer when it is fully in sync with the cluster.
+ 
+ - *Local State* shows how much data the folder actually contains right now. This can be more or less than the global state, if the folder is currently synchronizing with other devices.
 
-<p class="message warning">
-If the size of the *local state* is lower than the
-*global state* this implies that the folder it's not yet synchronized, or that
-you have defined *ignore patterns* and not all files for the given folder will
-be synchronized.
-</p>
+ - *Out of Sync* shows how much data that needs to be synchronized from other devices. Note that this is the sum of all out of sync *files* - if you already have parts of such a file, or an older version of the file, less data than this will need to be transferred over the network.
 
-## Remote State
+## Device View
 
-Bottom right side of the screen shows the overall state of the remote devices
-(overall completion percentage over all of the common folders between your
-device and the remote device.)
-
-![gui2.png](gui2.png)
-
-If a device has one or more folders to sync, you will see it with status
-*Syncing* and a percentage indicating its progress.
+The right side of the screen shows the overall state of all configured
+devices. The local device (your computer) is always at the top, with remote
+devices in alphabetical order below. For each device you see its current state
+and, when expanded, more detailed information. All transfer rates ("Download
+Rate" and "Upload Rate") are from the perspective of your computer, even those
+shown for remote devices. The rates for your local device is the sum of those
+for the remote devices.
